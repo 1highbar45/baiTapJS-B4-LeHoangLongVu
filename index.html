@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container d-flex flex-wrap">
+    <div class="col-6 mt-5">
+      <h1>Sắp xếp</h1>
+      <form>
+        <div class="form-group">
+          <label for="num1">Số nguyên thứ nhất</label>
+          <input type="text" class="form-control" id="num1">
+        </div>
+        <div class="form-group">
+          <label for="num2">Số nguyên thứ hai</label>
+          <input type="text" class="form-control" id="num2">
+        </div>
+        <div class="form-group">
+          <label for="num3">Số nguyên thứ ba</label>
+          <input type="text" class="form-control" id="num3">
+        </div>
+        <!-- C1: đổi type submit sang type button  -->
+        <button id="sapXep" type="button" class="btn btn-primary">Sắp xếp</button>
+        <p id="ketQua" class="alert alert-success"></p>
+      </form>
+    </div>
+
+
+    <div class="col-6 mt-5">
+      <h1>Chào hỏi</h1>
+      <ul>
+        <li class="type">
+          <input value="bo" id="chaoBo" type="radio" name="selector">
+          <label for="chaoBo">Bố</label>
+
+          <div class="check"></div>
+        </li>
+
+        <li class="type">
+          <input value="me" id="chaoMe" type="radio" name="selector">
+          <label for="chaoMe">Mẹ</label>
+          <div class="check"></div>
+        </li>
+
+        <li class="type">
+          <input value="anh" id="chaoAnh" type="radio" name="selector">
+          <label for="chaoAnh">Anh trai</label>
+          <div class="check"></div>
+        </li>
+
+        <li class="type">
+          <input value="em" id="chaoEm" type="radio" name="selector">
+          <label for="chaoEm">Em gái</label>
+          <div class="check"></div>
+        </li>
+      </ul>
+      <button id="chaoHoi" type="button" class="btn btn-primary">In lời chào</button>
+      <p id="loiChao" class="alert alert-success"></p>
+    </div>
+
+    <div class="col-6 mt-5">
+      <h1>Đếm số chẵn, lẻ</h1>
+      <form>
+        <div class="form-group">
+          <label for="so1">Số nguyên thứ nhất</label>
+          <input type="text" class="form-control" id="so1">
+        </div>
+        <div class="form-group">
+          <label for="so2">Số nguyên thứ hai</label>
+          <input type="text" class="form-control" id="so2">
+        </div>
+        <div class="form-group">
+          <label for="so3">Số nguyên thứ ba</label>
+          <input type="text" class="form-control" id="so3">
+        </div>
+        <!-- C1: đổi type submit sang type button  -->
+        <button id="demSo" type="button" class="btn btn-primary">Đếm số</button>
+        <p id="soLuong" class="alert alert-success"></p>
+      </form>
+    </div>
+
+    <div class="col-6 mt-5">
+      <h1>Kiểm tra tam giác</h1>
+      <form>
+        <div class="form-group">
+          <label for="canh1">Cạnh thứ nhất</label>
+          <input type="text" class="form-control" id="canh1">
+        </div>
+        <div class="form-group">
+          <label for="canh2">Cạnh thứ hai</label>
+          <input type="text" class="form-control" id="canh2">
+        </div>
+        <div class="form-group">
+          <label for="canh3">Cạnh thứ ba</label>
+          <input type="text" class="form-control" id="canh3">
+        </div>
+        <!-- C1: đổi type submit sang type button  -->
+        <button id="kiemTra" type="button" class="btn btn-primary">Kiểm tra</button>
+        <p id="tamGiac" class="alert alert-success"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+  <!-- MAIN JS  -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
